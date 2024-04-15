@@ -66,7 +66,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f5f6f7;
+  background-color: #f5f6f7ec;
 }
 
 .section-header {
@@ -305,7 +305,7 @@ section {
     font-family: var(--font-primary);
     font-size: 14px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     white-space: nowrap;
     transition: 0.3s;
@@ -738,7 +738,13 @@ section {
   position: relative;
   margin-bottom: 50px;
 }
+.service-item .icon {
+  text-align: center; /* Center the icon horizontally */
+}
 
+.service-item .icon i {
+  font-size: 3rem; /* Increase the icon size */
+}
 /*-------------------------------------------------------------
 # Our Projects Section
 --------------------------------------------------------------*/
@@ -1647,6 +1653,35 @@ margin-bottom: 50px;
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+#hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: -1px 0 2px #2f4d5a;
+}
+
+
+
+
+
+
 .hero {
   overflow-x: hidden;
   padding: 0;
@@ -1693,11 +1728,12 @@ margin-bottom: 50px;
 .hero .info h2 {
   color: #fff;
   margin-bottom: 30px;
-  padding-bottom: 30px;
-  font-size: 56px;
+  padding-bottom: 10px; 
+  font-size: 40px; 
   font-weight: 700;
   position: relative;
 }
+
 
 .hero .info h2:after {
   content: "";
